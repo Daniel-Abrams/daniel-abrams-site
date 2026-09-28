@@ -11,7 +11,9 @@ function HomePage() {
         repositores I have.
       </p>
       <Cards />
-      <a href="danlab1104@gmail.com">Contact Me</a>
+      <p className="email_item">
+        <a href="mailto:danlab1104@gmail.com">Contact Me</a>.
+      </p>
     </div>
   );
 }
