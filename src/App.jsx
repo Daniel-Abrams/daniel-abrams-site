@@ -1,20 +1,19 @@
 import { useState } from "react";
-import heroImg from "./assets/hero.png";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
 import "./App.css";
 import Cards from "./components/Cards";
 
 function HomePage() {
   return (
-    <>
-      <h1>Hello, Welcome to my webpage</h1>
+    <div>
+      <h1>Hello, welcome to my webpage.</h1>
       <p>
-        I have nothing to display at the moment. Below are some github
+        I don't have much to display at the moment, but here are some github
         repositores I have.
       </p>
-    </>
+      <Cards />
+      <a href="danlab1104@gmail.com">Contact Me</a>
+    </div>
   );
 }
 
-export default App;
+export default HomePage;
