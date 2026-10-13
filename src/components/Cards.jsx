@@ -7,7 +7,7 @@ function Cards() {
     <div className="cards">
       <div className="card-list">
         <CardItem
-          header="Swing Tacker"
+          header="Swing Tracker"
           text="Old iOS tracking app that uses gyroscopic data from Apple Watch"
           url="https://github.com/Daniel-Abrams/Swing-Tracker"
           src="/assets/IMG_1006.gif"
