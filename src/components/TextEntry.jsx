@@ -6,7 +6,7 @@ const API_URL = "https://u1ztf3wcc6.execute-api.us-east-1.amazonaws.com/predict"
 const maxLenth = 1000;
 
 export default function TextEntry() {
-  const [text, setText] = useState("");
+  var [text, setText] = useState("");
   const [tokens, setTokens] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
