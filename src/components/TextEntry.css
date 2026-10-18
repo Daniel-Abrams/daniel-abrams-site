@@ -1,0 +1,7 @@
+.textentry {
+    width: 100%;             /* Takes up the full width of its container */
+    box-sizing: border-box;  /* Ensures padding doesn't break the layout */
+    border-radius: 16px;
+    padding: 8px 12px; 
+    max-width: 1000px;
+  }

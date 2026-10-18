@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import "./TextEntry.css";
 
 const API_URL = "https://u1ztf3wcc6.execute-api.us-east-1.amazonaws.com/predict";
 
@@ -37,14 +38,13 @@ export default function TextEntry() {
 
   return (
     <main>
-      <h1>AI Text Detector</h1>
-
       <textarea
+        className="textentry"
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Enter text to analyze..."
         rows={6}
-      />
+        />
 
       <br />
 
