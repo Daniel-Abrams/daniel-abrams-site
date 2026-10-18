@@ -14,7 +14,7 @@ function HomePage() {
       </p>
       <Cards />
         <p>
-        Can a first-order Hidden Markov Model distinguish between huma and AI writing in hybrid text? Upload a sample to see how well it performs:
+        Can a first-order Hidden Markov Model distinguish between human and AI writing in hybrid text? Upload a sample to see how well it performs. Green = Human, red = AI.
       </p>
       <TextEntry />
       <p className="email_item">
