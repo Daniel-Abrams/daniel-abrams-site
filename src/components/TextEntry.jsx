@@ -6,7 +6,7 @@ const API_URL = "https://u1ztf3wcc6.execute-api.us-east-1.amazonaws.com/predict"
 const maxLenth = 1000;
 
 export default function TextEntry() {
-  var [text, setText] = useState("");
+  const [text, setText] = useState("");
   const [tokens, setTokens] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -15,12 +15,8 @@ export default function TextEntry() {
   async function handlePredict() {
     setLoading(true);
     setError("");
-
     try {
-      if (text.length() > maxLenth)
-      {
-        text = text.substring(0,maxLenth);
-      }
+
       const response = await fetch(API_URL, {
         method: "POST",
         headers: {
@@ -52,6 +48,7 @@ export default function TextEntry() {
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Enter text to analyze..."
+            maxLength={maxLength}
             rows={6}
         />
         ) : (
