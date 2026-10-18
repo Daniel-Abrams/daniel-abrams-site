@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./TextEntry.css";
 
 const API_URL = "https://u1ztf3wcc6.execute-api.us-east-1.amazonaws.com/predict";
+const maxLenth = 1000;
 
 export default function TextEntry() {
   const [text, setText] = useState("");
@@ -16,6 +17,10 @@ export default function TextEntry() {
     setError("");
 
     try {
+      if (text.length() > maxLenth)
+      {
+        text = text.substring(0,maxLenth);
+      }
       const response = await fetch(API_URL, {
         method: "POST",
         headers: {
