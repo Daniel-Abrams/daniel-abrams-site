@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./TextEntry.css";
 
 const API_URL = "https://u1ztf3wcc6.execute-api.us-east-1.amazonaws.com/predict";
-const maxLenth = 1000;
+const maxLength = 1000;
 
 export default function TextEntry() {
   const [text, setText] = useState("");
