@@ -11,7 +11,7 @@ function CardItem(props) {
         style={{ textDecoration: "none", color: "inherit" }}
       >
         <div class="card">
-          <img class="card-image" src={props.src} alt="Laptop on a desk" />
+          <img class="card-image" src={props.src}/>
           <div class="card-content">
             <h2 className="cards_header">{props.header}</h2>
             <p className="cards_text">{props.text}</p>
